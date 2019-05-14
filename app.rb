@@ -14,7 +14,7 @@ module FormsLab
 
     post '/pirates' do
       Pirate.parse_input(params)
-      @pirate = Pirate.all[0]
+      @pirate = Pirate.all.last
       @ships = Ship.all
       erb :"pirates/show"
     end
