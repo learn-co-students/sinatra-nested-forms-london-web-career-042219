@@ -12,11 +12,12 @@ module FormsLab            #What is this?
   end
 
   post '/pirates' do  #doesn't work if I type in URL
-    binding.pry
+   # binding.pry
     @name  = 
     @pirate = Pirate.new(params["pirate"])
     params["pirate"]["ships"].each do |ship|
       Ship.new(ship)
+     # binding.pry
     end
    
     @ships = Ship.all
