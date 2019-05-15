@@ -1,7 +1,14 @@
-<h1>Display your Pirate here</h1>
-
+<h1>Pirate <%=  Pirate.all.last.name %></h1>
+ <%= "Name: #{Pirate.all.last.name}," %>  
+ <%= "Weight: #{Pirate.all.last.weight}," %>
+ <%= "Height: #{Pirate.all.last.height}," %>
 
 <h2>Display your first ship here</h2>
-
+ <%= "Name: #{Ship.all[-2].name}," %>  
+ <%= "Weight: #{Ship.all[-2].type}," %>
+ <%= "Height: #{Ship.all[-2].booty}," %>
 
 <h2>Display your second ship here</h2>
+ <%= "Name: #{Ship.all.last.name}," %>  
+ <%= "Weight: #{Ship.all.last.type}," %>
+ <%= "Height: #{Ship.all.last.booty}," %>
